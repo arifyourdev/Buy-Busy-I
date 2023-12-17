@@ -97,6 +97,11 @@
     font-family: "Quicksand", sans-serif;
 }
 
+.nav_span {
+    display: flex;
+    align-items: center;
+}
+
 .nav_item,
 .nav_links {
     align-items: center;

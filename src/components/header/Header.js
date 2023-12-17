@@ -14,12 +14,12 @@ const Header = () => {
                     <ul className={style.nav_menu}>
                         <li className={`${style.nav_item} active`}>
                             <NavLink to="/" className={`${style.nav_links}`}>
-                                <span> <img className={style.icon_styles} src={Himg} alt={Himg} />Home</span>
+                                <span className={style.nav_span}> <img className={style.icon_styles} src={Himg} alt={Himg} />Home</span>
                             </NavLink>
                         </li>
                         <li className={`${style.nav_item} active`}>
                             <NavLink to="login" className={`${style.nav_links}`}>
-                                <span> <img className={style.icon_styles} src={SignIp} alt={SignIp} />SignIn</span>
+                                <span className={style.nav_span}> <img className={style.icon_styles} src={SignIp} alt={SignIp} />SignIn</span>
                             </NavLink>
                         </li>
                     </ul>
