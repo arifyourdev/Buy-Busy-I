@@ -118,6 +118,14 @@
     display: none;
 }
 
+.d_none {
+    display: none;
+}
+
+.d_block {
+    display: block;
+}
+
 @media screen and (max-width: 1600px) {
     .active_links {
         color: #224957;
