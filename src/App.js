@@ -4,6 +4,8 @@ import Header from "./components/header/Header";
 import Login from "./components/login/Login";
 import Registration from "./components/register/Registration";
 import "./App.css";
+import Cart from "./components/cart/Cart";
+import Order from "./components/order/Order";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/" index element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="/signup" element={<Registration />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/order" element={<Order />} />
         </Routes>
       </BrowserRouter>
     </div>

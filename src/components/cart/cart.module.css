@@ -1,0 +1,119 @@
+.CartPage_cartPageContainer {
+    margin: auto;
+}
+
+.CartPage_totalPrice {
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+    left: 0.5rem;
+    margin-right: 2rem;
+    padding: 1.5rem;
+    position: fixed;
+    top: 30%;
+}
+
+.CartPage_totalPrice p {
+    color: #224957;
+    font-size: 1.15em;
+    font-weight: 700;
+}
+
+.CartPage_purchaseBtn {
+    background: #7064e5;
+    border: 1px solid #7064e5;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 20px;
+    margin: auto;
+    transition: all .3s ease-in-out;
+}
+
+.ProductGrid_grid {
+    grid-gap: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 3rem 15rem;
+}
+
+.ProductContainer_productContainer {
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(64, 77, 148, .4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    transition: all .25s ease-in-out;
+}
+
+.ProductImage_imageContainer {
+    flex: 1 1;
+}
+
+.ProductDetails_productDetails {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.ProductDetails_productName {
+    color: #224957;
+    font-family: Inter, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+.ProductDetails_productName p {
+    margin: 0;
+}
+
+.ProductDetails_productOptions {
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    justify-content: space-between;
+    padding: 8px 0;
+    width: 100%;
+}
+
+.ProductDetails_productOptions p {
+    color: #224957;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ProductDetails_quantityContainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.ProductDetails_quantityContainer img {
+    transition: all .1s ease-in-out;
+}
+
+.ProductDetails_removeBtn {
+    background: #f14444;
+    border: 1px solid red;
+    border-radius: 6px;
+}
+
+.ProductDetails_addBtn,
+.ProductDetails_removeBtn {
+    color: #fff;
+    font-size: 20px;
+    padding: 0.75rem 0;
+    transition: all .3s ease-in-out;
+    width: 50%;
+    width: 100%;
+}
