@@ -1,9 +1,11 @@
 import React from 'react';
 import style from './home.module.css';
 
+
 const Home = () => {
     return (
         <div className={style.HomePage_homePageContainer}>
+
             <aside className={style.FilterSidebar_filterContainer}>
                 <h2>Filter</h2>
                 <form>

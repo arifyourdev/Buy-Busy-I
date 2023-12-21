@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import style from './register.module.css';
 import { db } from "../../firestore.js";
+import { addDoc, collection } from 'firebase/firestore';
+import { toast } from 'react-toastify';
 
 const Registration = () => {
     const [name, setName] = useState("");
@@ -23,7 +25,15 @@ const Registration = () => {
             return
         }
         try {
-
+            const addData = await addDoc(collection(db, 'users'), {
+                name: name,
+                email: email,
+                password: password,
+                createOn: new Date()
+            });
+            console.log(addData)
+            toast.success("Register successfuly");
+            setName(""); setEmail(""); setPassword("")
         } catch (e) {
             setError("Error in Submiting Data")
         }
